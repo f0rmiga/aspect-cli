@@ -7,6 +7,7 @@ Not licensed for re-use.
 package root
 
 import (
+	"aspect.build/cli/cmd/aspect/query"
 	"os"
 
 	"github.com/fatih/color"
@@ -79,6 +80,7 @@ func NewRootCmd(streams ioutils.Streams, defaultInteractive bool) *cobra.Command
 	cmd.AddCommand(docs.NewDefaultDocsCmd())
 	cmd.AddCommand(info.NewDefaultInfoCmd())
 	cmd.AddCommand(test.NewDefaultTestCmd())
+	cmd.AddCommand(query.NewDefaultQueryCmd())
 
 	// ### "Additional help topic commands" which are not runnable
 	// https://pkg.go.dev/github.com/spf13/cobra#Command.IsAdditionalHelpTopicCommand

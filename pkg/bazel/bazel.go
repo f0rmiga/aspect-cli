@@ -14,6 +14,7 @@ import (
 
 type Spawner interface {
 	Spawn(command []string) (int, error)
+	RunCommand(command []string, out io.Writer) (int, error)
 }
 
 type Bazel struct {

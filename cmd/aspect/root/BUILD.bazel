@@ -13,10 +13,11 @@ go_library(
         "//cmd/aspect/clean",
         "//cmd/aspect/docs",
         "//cmd/aspect/info",
+        "//cmd/aspect/query",
         "//cmd/aspect/root/flags",
         "//cmd/aspect/test",
         "//cmd/aspect/version",
-        "//docs/help/topics",
+        "//docs/help/topics",  # keep
         "//pkg/ioutils",
         "@com_github_fatih_color//:color",
         "@com_github_mattn_go_isatty//:go-isatty",
